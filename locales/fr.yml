@@ -2,9 +2,9 @@ start:
     success: Stream démarré avec succès
     error: "Erreur impossible de démarrer le stream: %{error}"
 startTwitchTranscoding:
-    trying: Tentative de démarrage du stream avec transcodeur
-    successNoTranscoding: Stream démarré avec succès sans transcodeur
-    success: Stream démarré avec transcodeur %{attemptsMessage}
+    trying: Tentative de démarrage du stream avec transcodage
+    successNoTranscoding: Stream démarré avec succès sans transcodage
+    success: Stream démarré avec transcodage %{attemptsMessage}
     attempts: ", à pris %{count} essais"
 stop:
     success: Stream stoppé avec succès
@@ -53,7 +53,7 @@ alias:
     removed: Alias %{alias} supprimé
     errorCommand: La commande %{command} n'existe pas
     errorAlias: L'alias %{alias} n'existe pas
-    errorAlreadyUsed: "%{alias} est déjà un alias"
+    errorAlreadyUsed: L'alias "%{alias}" est déjà utilisé
     errorIncorrectArguments: Erreur paramètres incorrects
 sceneSwitch:
     switch: Scène changée pour "%{scene}"
@@ -65,7 +65,7 @@ handleCommands:
     notify: Notification de changement automatique %{condition}
     autostop: Arret automatique du stream %{condition}
     enabled: est activé
-    disabled: et désactivé
+    disabled: est désactivé
 noalbs:
     prefix: NOALBS préfixe changé pour %{prefix}
     errorPrefix: Impossible de mettre à jour le préfixe pour NOALBS
@@ -82,8 +82,8 @@ scene:
     success: Changement de scène pour %{scene}
     error: Pas de scène %{scene} configurée
 collection:
-    noParams: No collection specified
-    notFound: "Error no collection found with the name: %{collection}"
-    success: Collection successfully switched to "%{collection}"
-    error: Error can't switch to collection "%{collection}"
-    note: "Note: the profile will only be changed when not streaming"
+    noParams: Aucune collection spécifiée
+    notFound: "Erreur aucune collection trouvée avec le nom: %{collection}"
+    success: Collection changée avec succés pour "%{collection}"
+    error: Erreur, impossible de changer vers la collection "%{collection}"
+    note: "Note: le profil sera uniquement mis à jour hors stream"
